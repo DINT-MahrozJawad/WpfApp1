@@ -5,13 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Icon="128.ico">
     <Grid>
-        <TextBlock x:Name="Titulo" HorizontalAlignment="Left" Margin="263,46,0,0" TextWrapping="Wrap" Text="Hola Mundo" VerticalAlignment="Top" FontSize="48" Foreground="#FFEC0E0E" RenderTransformOrigin="0.201,0.481"/>
-        <TextBlock HorizontalAlignment="Left" Margin="263,129,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Foreground="Black" RenderTransformOrigin="0.201,0.481" FontSize="20"/>
-        <TextBox x:Name="Nombre" HorizontalAlignment="Left" Height="23" Margin="263,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" />
-        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="387,202,0,0" VerticalAlignment="Top" Width="84" Height="27" Click="Button_Click"/>
-        <Button Content="Limpiar" HorizontalAlignment="Left" Margin="263,202,0,0" VerticalAlignment="Top" Width="84" Height="27" Click="Button_Click_Limpia"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="544*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="Titulo" HorizontalAlignment="Left" Margin="14.699,46,0,0" TextWrapping="Wrap" Text="Hola Mundo" VerticalAlignment="Top" FontSize="48" Foreground="#FFEC0E0E" RenderTransformOrigin="0.201,0.481" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14.699,129,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Foreground="Black" RenderTransformOrigin="0.201,0.481" FontSize="20" Grid.Column="2"/>
+        <TextBox x:Name="Nombre" HorizontalAlignment="Left" Height="23" Margin="14.699,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" Grid.Column="2" />
+        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="138.699,202,0,0" VerticalAlignment="Top" Width="84" Height="27" Click="Button_Click" Grid.Column="2"/>
+        <Button Content="Limpiar" HorizontalAlignment="Left" Margin="14.699,202,0,0" VerticalAlignment="Top" Width="84" Height="27" Click="Button_Click_Limpia" Grid.Column="2"/>
 
     </Grid>
 </Window>
