@@ -37,6 +37,10 @@ namespace WpfApp1
             {
                 Titulo.Text = "Hola " + Nombre.Text;
             }
+            else
+            {
+                Titulo.Text = "Hola Mundo";
+            }
         }
     }
 }
